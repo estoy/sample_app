@@ -84,6 +84,7 @@ GEM
       activesupport (~> 3.0)
       railties (~> 3.0)
       rspec (~> 2.7.0)
+    spork (0.8.5)
     sprockets (2.0.3)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -106,5 +107,6 @@ PLATFORMS
 DEPENDENCIES
   rails
   rspec-rails
+  spork
   sqlite3
   webrat
