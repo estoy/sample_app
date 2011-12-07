@@ -6,3 +6,4 @@ tmp/
 *~
 .project
 .DS_Store
+webrat.log
