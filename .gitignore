@@ -7,3 +7,4 @@ tmp/
 .project
 .DS_Store
 webrat.log
+public/assets/
