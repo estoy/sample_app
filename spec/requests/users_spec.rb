@@ -60,6 +60,20 @@ describe "Users" do
     end
   end
 
+  describe "users list" do
+    it "should show delete links to admins" do
+      admin = Factory(:user, :email => "admin@example.com", :admin => true)
+      integration_sign_in(admin)
+      visit users_path
+      response.should have_selector("a", :content => "delete")
+    end
 
+    it "should not show delete links to non-admins" do
+      user = Factory(:user)
+      integration_sign_in user
+      visit users_path
+      response.should_not have_selector("a", :content => "delete")
+    end
+  end
 end
 
